@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorry Letter</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('https://marketplace.canva.com/EAFUFiGX5ek/1/0/1600w/canva-colorful-watercolor-floral-linktree-background-qRHfsd-4Nmc.jpg'); /* Flowery background */
+      background-color: #f8d1e0;
+      background-size: 200px 200px; /* Size of the flowers */
+      animation: backgroundAnimation 5s ease-in-out infinite alternate;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @keyframes backgroundAnimation {
+      0% { background-color: #f8d1e0; }
+      100% { background-color: #ffebf0; }
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      padding: 30px;
+      width: 320px;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      animation: slideDown 1s ease forwards;
+    }
+
+    @keyframes slideDown {
+      0% { opacity: 0; transform: translateY(-50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 0;
+      color: #e91e63;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .heart {
+      font-size: 3rem;
+      color: red;
+      animation: heartbeat 1.5s ease-in-out infinite;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    .btn-container {
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #e91e63;
+      color: white;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0 10px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #d81b60;
+    }
+
+    img {
+      width: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="heart">❤️</div>
+    <h1>I'm Sorry!</h1>
+    <p>
+      Mujhe maaf kar de Goluu, mei sach mein apne galtiyon ko samajhta hoon. <br>
+      I know I’ve hurt you, and I’m truly sorry for it. Please let me make things right for once atleast let me try to. <br>
+      I am not saying this because things have escalated I truely mean it, Tu hi mere liye sab kuch hai bohot jyda important hai. I understood the importance and tere concerns trust me I am trying to work on this.
+      <br> Let me make this right for once I don't want you to regret over this kabhi bhi in your life idk. <br>
+      I LOVE YOU and I'LL KEEP LOVING YOU 🩷🌼<br>
+    </p>
+    <h4>Do you wanna give me one more chance?</h4>
+    <div class="btn-container">
+      <button onclick="forgiveYes()">Yes</button>
+      <button onclick="forgiveNo()">No</button>
+    </div>
+  </div>
+
+  <script>
+    function forgiveYes() {
+      document.querySelector('.card').innerHTML = `
+        <div class="heart">❤️</div>
+        <h1>Thank You!</h1>
+        <p>
+          Thank you for forgiving me. Tum mere liye bahut important ho, aur main hamesha better banne ki koshish karunga.<br>
+          Please agar tu yaha tak aayi hai I want you to know you are so much important to me I care about you the most and I do love you unconditionally. I can't see you regretting over me for anything. 
+          Coz i know Regret lasts forever I can't leave you in that state. <br><br>
+          I LOVE YOU 🩷🌼 
+        </p>
+      `;
+    }
+
+    function forgiveNo() {
+      document.querySelector('.card').innerHTML = `
+        <div class="heart">💔</div>
+        <h1>Please Forgive Me!</h1>
+        <p>
+          Mujhe ek aur mauka de please, mei apni galtiyan theek karna chahta hoon. <br>
+          I know I’ve made mistakes, but please give me a chance to make it right and not once but many times. <br>
+          I have hurt you many times over this due to my stupidity. I will not neglect us in any way possible just for once talk to me ache se <br>
+          If it happens again idk for whatever reason. Then the judgement you'll give I'll agree to it. <br>
+          <br> I LOVE YOU and I'LL KEEP LOVING YOU <br>
+        </p>
+        <div class="btn-container">
+          <button onclick="forgiveYes()">Okay, I forgive you</button>
+          <button onclick="stillAngry()">Still Angry?</button>
+        </div>
+      `;
+    }
+
+    function stillAngry() {
+      document.querySelector('.card').innerHTML = `
+        <div class="heart">💔💔</div>
+        <h1>I'm Really Sorry 😔</h1>
+        <p>
+          I know you’re still angry, and I completely understand. I messed up, and I’ve hurt you more than I can express. <br>
+          Tum itni special ho mere liye, aur mujhe apni galtiyon ka ehsaas hai. <br>
+          Main tumhe itna hurt nahi karna chahta tha, but still, maine tumhe hurt kiya. Agar tum mujhe ek aur chance dogi, I promise, main apni poori koshish karunga to never let this happen again. Tum meri duniya ho, aur tumhare bina kuch bhi sahi nahi lagta. 🥺<br>
+          Main bas yahi chahta hoon ke tum hamesha khush raho. Please talk to me, let me make it right. <br><br> I LOVE YOU 🩷🌸 
+        </p>
+        <img src="./mine.jpg" alt="Your Cute Pic" />
+        <div class="btn-container">
+          <button onclick="forgiveYes()">Okay, I forgive you</button>
+          <button onclick="stillGussa()">Still Gussa Ho?</button>
+        </div>
+      `;
+    }
+
+    function stillGussa() {
+      document.querySelector('.card').innerHTML = `
+        <div class="heart">💔💔💔</div>
+        <h1>Please Maan Jao 😢</h1>
+        <p>
+          Tum abhi bhi gussa ho? Please mujhe ek aur chance de do. Mei tujhe fir kabhi aise hurt nahi karunga. Mere liye tum sab kuch ho. Mei jaanta hoon ke maine galti ki hai, lekin mei apni galtiyon se seekh raha hoon. 😭<br>
+          Tere bina sab adhura hai, aur teri khushi mere liye sabse zyada important hai. 🥺<br><br>
+          Please maan jao, tujhe itna hurt karna kabhi iccha nahi thi. 🩷💔🌹
+        </p>
+        <img src="./mine.jpg" alt="Your Cute Pic" />
+        <div class="btn-container">
+          <button onclick="forgiveYes()">Ok, maaf kiya!</button>
+          <button onclick="stillGussa()">Abhi bhi gussa hu 😭</button>
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>
